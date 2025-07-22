@@ -55,8 +55,8 @@
 // }
 
 //---------------------------------------------------------------
-// let L= ['JS','C#','PHP'];
-// for(a of L)
-// {
-//     document.writeln(`<br/><a href= "">${a}<a/><br/>`)
-// }
+let L= ['JS','C#','PHP'];
+for(i of L)
+{
+    document.writeln(`<br/><button class="btn-t" href= "">${i}</button><br/>`)
+}
