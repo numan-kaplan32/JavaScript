@@ -1,16 +1,18 @@
-     .btn-t {
-  background-color: blue;        
-  color: azure;                  
-  border: none;                 
-  border-radius: 5px;         
-  width: 70px;             
-  height: 40px;           
-  font-weight: bold;        
-  cursor: pointer;       
-  transition: background-color 0.3s ease, transform 0.2s ease;  
-}
-
-.btn-t:hover {
-  background-color: darkblue;   
-  transform: scale(1.05);      
-}
+ .btn-t { 
+    background-color: blue;         
+    color: azure;   
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease,font-size 0.4s ease; 
+    text-decoration: none;
+   }
+ .btn-t:hover {
+    background-color: darkblue;  
+    color: gold;
+    font-size: 20px;
+    transform: scale(1.05);      
+   }
