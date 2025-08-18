@@ -1,0 +1,61 @@
+#time {
+  font-family: 'Times New Roman', Times, serif;
+  font:bold;
+  font-size: 34px;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  text-align: center;
+
+  transition:transform 0.3s ease, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#time:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: #bdbdbd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+
+}
+#bottomFutter {
+    background-color: #f5f5f5; /* Açık gri arka plan */
+    color: #333;               /* Yazı rengi */
+    text-align: center;        /* Ortala */
+    padding: 15px 0;           /* Üst-alt boşluk */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #ddd; /* Üst çizgi */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Üstte kalsın */
+}
+
+#bottomFutter small {
+    display: block;
+}
+#pay {
+    background-color: #28a745; /* Yeşil */
+    color: white;              /* Beyaz yazı */
+    padding: 10px 20px;        /* Buton içi boşluk */
+    border: none;              /* Kenarlık yok */
+    border-radius: 5px;        /* Yuvarlak köşeler */
+    font-size: 16px;           /* Yazı boyutu */
+    cursor: pointer;           /* Üzerine gelince el simgesi */
+    transition: background-color 0.3s ease; /* Hover geçiş efekti */
+}
+
+#pay:hover {
+    background-color: #218838; /* Hover rengi */
+}
+
+#text {
+    margin-top: 15px;          /* Butonla arası */
+    font-size: 16px;           /* Yazı boyutu */
+    color: #333;               /* Yazı rengi */
+    font-family: Arial, sans-serif;
+}

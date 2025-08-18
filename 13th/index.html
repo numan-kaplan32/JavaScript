@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>13th</title>
+</head>
+<body>
+
+<div id="time">
+
+</div>
+
+<div id="bottomFutter">
+    <small>Her Hakkkı Saklıdır &copy;<span id="year"></span> Numan A.Ş</small>
+</div>
+
+<button id="pay">Ödeme yap</button>
+<p id="text"></p>
+
+<h2 id="hours"></h2>
+
+    <script src="app.js"></script>
+    <script>
+   function startCountdown(durationInSeconds) {
+    let remaining = durationInSeconds;
+
+    function updateCountdown() {
+        if (remaining <= 0) {
+            document.getElementById('hours').innerText = "Süre doldu!";
+            clearInterval(timer);
+            return;
+        }
+
+        let hours = Math.floor(remaining / 3600);
+        let minutes = Math.floor((remaining % 3600) / 60);
+        let seconds = remaining % 60;
+
+        // Sayıyı 2 basamaklı göstermek için padStart kullanıyoruz
+        let timeString = 
+            String(hours).padStart(2, '0') + ":" +
+            String(minutes).padStart(2, '0') + ":" +
+            String(seconds).padStart(2, '0');
+
+        document.getElementById('hours').innerText = timeString;
+
+        remaining--;
+    }
+
+    updateCountdown(); // İlk değer hemen gösterilsin
+    let timer = setInterval(updateCountdown, 1000); // Her saniye güncelle
+}
+
+// 3 saat = 3 * 60 * 60 = 10800 saniye
+startCountdown(10800);
+
+    </script>
+</body>
+</html>
